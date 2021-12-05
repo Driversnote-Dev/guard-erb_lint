@@ -1,0 +1,4 @@
+guard(:erb_lint) do
+  watch(/.+\.erb$/)
+  watch(/.+\.html$/)
+end

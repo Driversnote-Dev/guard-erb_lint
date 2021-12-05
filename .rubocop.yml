@@ -1,0 +1,49 @@
+inherit_gem:
+  rubocop-shopify: rubocop.yml
+
+require:
+  - rubocop-rspec
+
+AllCops:
+  EnabledByDefault: true
+  NewCops: enable
+
+Gemspec/RequireMFA:
+  Enabled: false
+
+Style/DocumentationMethod:
+  Enabled: false
+Style/MissingElse:
+  Enabled: false
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+Style/Copyright:
+  Enabled: false
+Style/ConstantVisibility:
+  Enabled: false
+Style/MethodCalledOnDoEndBlock:
+  Enabled: false
+Style/DisableCopsWithinSourceCodeDirective:
+  Enabled: false
+Style/OpenStructUse:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - lib/guard/erb_lint/templates/Guardfile
+
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile
+    - spec/**/*
+Metrics/MethodLength:
+  Max: 20
+Metrics/AbcSize:
+  Max: 20
+
+Lint/NumberConversion:
+  Enabled: false
+Lint/ConstantResolution:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 5
