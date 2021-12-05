@@ -17,6 +17,14 @@ bundle install
 bundle exec guard init erb_lint
 ```
 
+Or just add the following to your Guardfile:
+```ruby
+guard(:erb_lint) do
+  watch(/.+\.erb$/)
+  watch(/.+\.html$/)
+end
+```
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/mathiashsteffensen/guard-erb_lint.
