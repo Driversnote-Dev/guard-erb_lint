@@ -66,11 +66,11 @@ module Guard
     end
 
     def run(*args)
-      @cli ||= ERBLint::CLI.new
+      cli = ERBLint::CLI.new
 
       Compat::UI.info("Running ERBLint with args #{args.join(", ")}")
 
-      @cli.run(["bundle", "exec", "erblint", *args])
+      cli.run(args)
     end
 
     private
