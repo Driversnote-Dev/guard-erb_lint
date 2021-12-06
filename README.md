@@ -7,7 +7,7 @@ Automatically lints your ERB view files using [Guard](https://github.com/guard/g
 Add this line to your application's Gemfile:
 
 ```ruby
-gem("guard-erb_lint", git: "https://github.com/mathiashsteffensen/guard-erb_lint")
+gem("guard-erb_lint", git: "https://github.com/Driversnote-Dev/guard-erb_lint")
 ```
 
 And then execute:
