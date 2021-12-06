@@ -27,7 +27,7 @@ end
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/mathiashsteffensen/guard-erb_lint.
+Bug reports and pull requests are welcome on GitHub at https://github.com/Driversnote-Dev/guard-erb_lint.
 
 ## License
 
