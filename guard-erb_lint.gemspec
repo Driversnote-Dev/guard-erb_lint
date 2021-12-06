@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["mathiashsteffensen@protonmail.com"]
 
   spec.summary       = "Guard plugin for erb_lint"
-  spec.homepage      = "https://github.com/mathiashsteffensen/guard-erb_lint"
+  spec.homepage      = "https://github.com/Driversnote-Dev/guard-erb_lint"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
