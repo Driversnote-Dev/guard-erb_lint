@@ -6,9 +6,7 @@ module Guard
       DEFAULTS = { all_on_start: true, all_on_change: false }
 
       def self.with_defaults(options)
-        DEFAULTS.each do |k, v|
-          options[k] ||= v
-        end
+        DEFAULTS.each { |k, v| options[k] = options.fetch(k, v) }
 
         options
       end
